@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+	<title>Covid-19 Journal</title>
+	<link rel="icon" href="static/img/logo.png">
+</head>
+<body>
+	<div class = "logo">
+		<a href="/"><img src="static/img/logo.png" alt="Logotipo"></a>
+	</div>
+		
+		<br><br><br><br><br><br><br>
+		
+		<center>
+		<h2>{{noticia.get_titulo()}}</h2>
+		<video src="{{url_for('static', filename=noticia.get_videoNoticia())}}" type="video/mp4" controls>
+		</video>
+		<br>
+		<p><font size="4">{{noticia.get_descricao()}}</font></p>
+        <hr>
+			<p><font color="blue">Data Publicação: {{noticia.get_dataPublicacao()}}</font></p>
+		</center>
+</body>
+</html>

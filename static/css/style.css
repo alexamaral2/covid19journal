@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img{
+    position: absolute;
+    width: 300px;
+    height: auto;
+}
+
+
+.container img{
+    height: 200;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container p{
+    font-family: "verdana";
+    margin: 6%;
+}
+
+footer{
+    background: black;
+    tex
+}
+
